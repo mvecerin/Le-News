@@ -1,0 +1,248 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+/* BODY */
+body{
+  font-family: Georgia;
+  background-color: #f5f6f8;
+  color: #2a303b;
+}
+
+/*CLASSES*/
+
+.center-text{
+  text-align: center;
+}
+.underline{
+  text-decoration: underline;
+}
+.italics{
+  font-style: italic;
+}
+.info-page{
+  min-height: 600px;
+  padding-top: 30px;
+  position: relative;
+}
+.fifty-center{
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* ERROR */
+
+.error{
+  color: red;
+}
+
+input:invalid, textarea:invalid{
+  border-color: red;
+}
+
+/* HEADER */
+@font-face {
+  font-family: Des-Malers-Fraktur;
+  src: url(fonts/Des-Malers-Fraktur.ttf);
+}
+
+header{
+  background-color: white;
+  box-shadow: 1px 1px 10px lightgray;
+  /* za shadow */
+  position: relative;
+  z-index: 5;
+}
+/* glavni naslov */
+h1{
+  font-family: Des-Malers-Fraktur;
+  letter-spacing: 2px;
+  color: black;
+  font-weight: normal;
+  text-shadow: -2px 1px whitesmoke, -3px 1px darkgray;
+  font-size: 80px;
+  padding: 20px 0;
+  border-bottom: 4px solid #026b9c;
+}
+
+/* NAV */
+
+.meni a{
+  display: block;
+  padding: 20px;
+}
+.meni li{
+  display: inline-block;
+}
+
+
+/* MAIN */
+
+img{
+  width: 100%;
+}
+
+main{
+  background-color: white;
+  padding: 0 15px;
+  width: 50%;
+  margin: 25px auto 0;
+}
+
+/* NASLOVNA I KATEGORIJE*/
+
+.section-3-clanaka{
+  padding: 30px 0 70px;
+  border-top: 2px solid #5f636c;
+}
+.section-3-clanaka img{
+  max-height: 180px;
+}
+.ime-kategorije-naslovna{
+  padding: 20px 0 10px 8px;
+}
+.clanak-naslovna{
+  vertical-align: top;
+  width: 32.5%;
+  display: inline-block;
+  padding: 5px 8px;
+}
+.clanak-naslovna p{
+  font-size: 17px;
+}
+#kategorije{
+  border: none;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+/* CLANAK*/
+
+.clanak-section{
+  padding: 25px;
+}
+.clanak-ime-kategorije{
+  color: gray;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+.clanak-naslov{
+  font-weight: normal;
+  font-size: 35px;
+}
+.clanak-sazetak{
+  font-size: 20px;
+  padding: 20px 0;
+}
+.crta{
+  width: 40px;
+  border-top: 1px solid lightgray;
+  padding-bottom: 15px;
+}
+/* .clanak figcaption{
+  color: gray;
+  font-size: 15px;
+} */
+.clanak-tekst{
+  letter-spacing: 0.1em;
+  padding: 25px 0;
+  line-height: 1.5em;
+}
+
+/* UNOS */
+
+.forma{
+  padding: 45px 0;
+  width: 50%;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+.forma h2{
+  padding-bottom: 30px;
+}
+
+.input label{
+  display: block;
+  padding-bottom: 5px;
+}
+
+.input{
+  padding: 15px 0;
+}
+
+.form-width{
+  width: 100%;
+}
+
+/* ADMINISTRACIJA */
+.preview-slika{
+  padding-bottom: 15px;
+  display: block;
+  width: 150px;
+}
+#login{
+  width: 30%;
+  margin: 0 auto;
+}
+.prijava-btn{
+  margin-top: 10px;
+  padding: 10px;
+  color: white;
+  background-color: #026b9c;
+  border: 1px solid #026b9c;
+  border-radius: 20%;
+}
+#prijava-info, #odjava-info{
+  position: absolute; right: 50%;
+}
+
+/* FOOTER */
+footer{
+  background-color: #2a303b;
+  padding: 35px 0;
+  font-size: 15px;
+  color: white;
+}
+
+footer p{
+  border-top: 1px solid whitesmoke;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 1400px){
+
+  /* NASLOVNA */
+  .section-3-clanaka article{
+    width: 100%;
+    display: block;
+    padding: 25px;
+  }
+  .section-3-clanaka img{
+    max-height: none;
+  }
+
+}
+
+@media only screen and (max-width: 720px){
+
+  main{
+    width: 100%;
+  }
+
+  /* NAV */
+  .meni li{
+    display: block;
+  }
+
+}
