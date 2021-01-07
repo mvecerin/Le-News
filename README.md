@@ -1,4 +1,4 @@
 # Le-News 
 
-Web aplikacija za portal s vijestima.
+Web aplikacija - portal s vijestima.
 Unos, uređivanje i brisanje članaka, prikaz članaka po kategoriji, registracija i prijava.
